@@ -2,133 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Melvine Portfolio</title>
+  <title>Melvine Okeyo</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header>
 
 <!-- NAV -->
 <nav>
-  <h2>Melvine</h2>
+  <a href="#" class="logo">Melvine Okeyo</a>
 
   <ul class="menu" id="menu">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#media">Media</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 
-  <div>
-    <button class="toggle-btn" onclick="toggleDark()">🌙</button>
-    <i class="fas fa-bars hamburger" onclick="toggleMenu()"></i>
+  <div class="nav-button">
+    <button onclick="toggleDark()" aria-label="Toggle dark mode">🌙</button>
+    <i class="fas fa-bars hamburger" onclick="toggleMenu()" aria-label="Toggle menu"></i>
   </div>
 </nav>
+  </header>
+
+  <main>
+
 
 <!-- HERO -->
-<header>
-  <img src="Snapchat-1246831281 (1).jpg" alt="Profile" style="width: 200px; height: 200;">
+ <section id="hero">
+  <h1>Welcome to My Portfolio</h1>
+  <p class="tagline">Creative Web Developer | Passionate Coder | Lifelong Learner</p>
+  <p class="intro">Hi, I'm Melvine Okeyo, a web developer with a passion for creating beautiful and functional websites.<br>
+     Explore my work and get to know me!</p>
+  <div class="cta-buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#contact" class="btn-outline">Get in Touch</a>
+  </div>
+
+  <img src="MELVINE IMAGE.jpg" alt="Profile" style="width: 250px; height: 250;">
   <h1 id="typing"></h1>
-  <p>Creative Web Developer</p>
-  <a href="cv.pdf" download class="btn">Download CV</a>
-</header>
-
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello, my name is Melvine Okeyo, and I am a passionate and dedicated web developer. 
-I enjoy creating clean, modern, and user-friendly websites that provide a great experience for users.
-
-I have been learning and working with HTML, CSS, and basic JavaScript, and I am continuously improving my skills by building real projects such as travel and cooking websites. 
-Through these projects, I have developed a strong understanding of layout design, responsiveness, and web structure.
-
-I am highly motivated to grow in the tech industry, and I believe in learning by doing. 
-Every project I create helps me become better, more creative, and more confident in my abilities.
-
-I am excited about future opportunities where I can contribute, learn, and build impactful digital solutions.
-</p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="container">
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">GitHub</div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="container">
-
-    <div class="card">
-      <h3>Travel Website</h3>
-      <p>Modern travel design</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-
-    <div class="card">
-      <h3>Cooking Website</h3>
-      <p>Recipe platform</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- MEDIA -->
-<section id="media">
-  <h2>Media</h2>
-  <div class="container">
-
-    <div class="card">
-       <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3" loop controls></audio>
-    </div>
-
-    <div class="card">
-      <video
-    width="640"
-    loop
-    controls
-    muted
-    poster="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
-  >
-    <source
-      <iframe width="315" height="576" src="https://www.youtube.com/embed/FKdmZA1_b3o" title="trending dance challenge #theclusterke #nasieku #dance #dancechallenge #trendingkenya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
-      type="video/mp4"
-    >
-      </video>
-    </div>
-<div
-    <iframe 
-  src="https://www.youtube.com/embed/zdeM792-Baw"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
-</div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>📞 0792829040/0105743683</p>
-  <p>📧 okeyomelvine6@gmail.com</p>
+  <p>Creative Web Developer</p>  <a href="cv.pdf" download class="btn">Download CV</a>
 </section>
 
 <footer>
-  <p>© 2026 Melvine</p>
+  <p>&copy; 2026 Melvine. All rights reserved.</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/melvine-okeyo" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Bree25" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
 </footer>
 
 <!-- JS -->
